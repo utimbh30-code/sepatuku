@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SneakerStore Premium</title>
+
+<style>
+body{
+    margin:0;
+    background:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* FRAME HP */
+.phone{
+    width:390px;
+    height:844px; /* Rasio 19.5:9 */
+    background:#f9f9f9;
+    border-radius:40px;
+    overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,0.6);
+    position:relative;
+}
+
+/* HEADER */
+header{
+    background:#000;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+/* SLIDER */
+.slider{
+    display:flex;
+    width:1000%;
+    height:calc(100% - 60px);
+    transition:0.5s ease-in-out;
+}
+
+.slide{
+    width:390px;
+    padding:20px;
+    box-sizing:border-box;
+    overflow-y:auto;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:20px;
+    padding:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+h2{
+    margin:10px 0 5px;
+}
+
+.desc{
+    font-size:14px;
+    color:#555;
+}
+
+.price{
+    color:#e60023;
+    font-weight:bold;
+    font-size:18px;
+    margin:10px 0;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    background:black;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#333;
+}
+
+/* DOT NAVIGATION */
+.dots{
+    position:absolute;
+    bottom:15px;
+    width:100%;
+    text-align:center;
+}
+
+.dot{
+    height:8px;
+    width:8px;
+    margin:4px;
+    background:#bbb;
+    border-radius:50%;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.dot.active{
+    background:black;
+}
+</style>
+</head>
+<body>
+
+<div class="phone">
+<header>SNEAKER PREMIUM</header>
+
+<div class="slider" id="slider">
+
+<!-- SLIDE 1 -->
+<div class="slide">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="">
+<h2>AirFlex Runner X</h2>
+<p class="desc">Sepatu lari ringan dengan bantalan empuk dan breathable.</p>
+<p class="price">Rp 1.299.000</p>
+<button>Beli Sekarang</button>
+</div>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="slide">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="">
+<h2>StreetMax Urban</h2>
+<p class="desc">Desain modern cocok untuk aktivitas harian.</p>
+<p class="price">Rp 899.000</p>
+<button>Beli Sekarang</button>
+</div>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="slide">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1528701800489-20be3c2ea07b" alt="">
+<h2>Sportiva Pro 2.0</h2>
+<p class="desc">Sol anti-slip untuk olahraga intens.</p>
+<p class="price">Rp 1.499.000</p>
+<button>Beli Sekarang</button>
+</div>
+</div>
+
+<!-- SLIDE 4 -->
+<div class="slide">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" alt="">
+<h2>Classic Retro 90s</h2>
+<p class="desc">Gaya klasik dengan sentuhan modern.</p>
+<p class="price">Rp 1.050.000</p>
+<button>Beli Sekarang</button>
+</div>
+</div>
+
+<!-- SLIDE 5 -->
+<div class="slide">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584735175097-719d848f8449" alt="">
+<h2>Runner Boost Elite</h2>
+<p class="desc">Teknologi boost untuk kenyamanan maksimal.</p>
+<p class="price">Rp 1.699.000</p>
+<button>Beli Sekarang</button>
+</div>
+</div>
+
+<!-- SLIDE 6 -->
+<div class="slide">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1597045566677-8cf032ed6634" alt="">
+<h2>Urban Street Pro</h2>
+<p class="desc">Cocok untuk gaya kasual & semi formal.</p>
+<p class="price">Rp 799.000</p>
+<button>Beli Sekarang</button>
+</div>
+</div>
+
+<!-- SLIDE 7 -->
+<div class="slide">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f" alt="">
+<h2>TrailBlazer X</h2>
+<p class="desc">Sepatu outdoor dengan grip kuat.</p>
+<p class="price">Rp 1.350.000</p>
+<button>Beli Sekarang</button>
+</div>
+</div>
+
+<!-- SLIDE 8 -->
+<div class="slide">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5" alt="">
+<h2>AirCloud Comfort</h2>
+<p class="desc">Minimalis & nyaman sepanjang hari.</p>
+<p class="price">Rp 950.000</p>
+<button>Beli Sekarang</button>
+</div>
+</div>
+
+<!-- SLIDE 9 -->
+<div class="slide">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb" alt="">
+<h2>Premium Leather Lux</h2>
+<p class="desc">Sepatu kulit asli dengan tampilan elegan.</p>
+<p class="price">Rp 2.100.000</p>
+<button>Beli Sekarang</button>
+</div>
+</div>
+
+<!-- SLIDE 10 -->
+<div class="slide">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06" alt="">
+<h2>Limited Edition X</h2>
+<p class="desc">Edisi terbatas dengan desain eksklusif.</p>
+<p class="price">Rp 2.499.000</p>
+<button>Beli Sekarang</button>
+</div>
+</div>
+
+</div>
+
+<div class="dots" id="dots"></div>
+
+</div>
+
+<script>
+let slider = document.getElementById("slider");
+let dotsContainer = document.getElementById("dots");
+let totalSlides = 10;
+let index = 0;
+
+/* CREATE DOTS */
+for(let i=0;i<totalSlides;i++){
+    let dot=document.createElement("span");
+    dot.classList.add("dot");
+    dot.onclick=function(){goSlide(i)};
+    dotsContainer.appendChild(dot);
+}
+updateDots();
+
+/* FUNCTION */
+function goSlide(i){
+    index=i;
+    slider.style.transform="translateX(-"+(390*i)+"px)";
+    updateDots();
+}
+
+function updateDots(){
+    let dots=document.querySelectorAll(".dot");
+    dots.forEach(d=>d.classList.remove("active"));
+    dots[index].classList.add("active");
+}
+
+/* AUTO SLIDE */
+setInterval(()=>{
+    index=(index+1)%totalSlides;
+    goSlide(index);
+},4000);
+</script>
+
+</body>
+</html>
